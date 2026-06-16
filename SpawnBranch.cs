@@ -3,14 +3,13 @@ using UnityEngine;
 public class BranchSpawner : MonoBehaviour
 {
     [Header("Prefab Setup")]
-    // This creates an empty slot in the Inspector where you will drag your Branch Prefab
-    public GameObject branchPrefab;
-    public Material[] hydrationMats;
+    public GameObject branchPrefab;     // The parent GameObject which will contain all the branches created
+    public Material[] hydrationMats;    // A set of materials determining the initial hydration of the branch
 
     [Header("Planting Pattern")]
     public int numberOfPlants = 10;      // Total plants to spawn
     public float forwardSpacing = 2f;    // Distance between plants moving forward
-    public float zigzagWidth = 1.5f;     // How far left and right they alternate
+    public float zigzagWidth = 1.5f;     // How far left and right
 
     void Start()
     {
@@ -19,36 +18,35 @@ public class BranchSpawner : MonoBehaviour
 
     void PlantZigzagRow()
     {
-        // Safety check: ensure you didn't forget to assign the prefab
+        // Check if the value has been assigned in the editor
         if (branchPrefab == null)
         {
-            Debug.LogError("Branch Prefab is missing! Please drag it into the script.");
+            Debug.LogError("Branch Prefab is missing!");
             return;
         }
 
-        // Loop through the total number of plants we want to spawn
+        // Loop through the total number of plants
         for (int i = 0; i < numberOfPlants; i++)
         {
-            // 1. Calculate Forward Position (Z-axis)
-            // Each plant moves further down the line
+            // Calculate Forward Position
             float zPosition = i * forwardSpacing;
 
-            // 2. Calculate Zigzag Position (X-axis)
-            // The '%' (modulo) checks the remainder of division by 2. 
-            // If it is 0 (even), it goes right. If it is 1 (odd), it goes left.
+            // Calculate Zigzag Position
+            // If it is 0, it goes right. If it is 1, it goes left
             float xPosition = (i % 2 == 0) ? zigzagWidth : -zigzagWidth;
 
-            // Combine them into a 3D coordinate (relative to the Spawner's location)
+            // Combine them into a Vecotr3 (x, y, z)
             Vector3 spawnLocation = transform.position + new Vector3(zPosition, 0, xPosition);
 
-            // 3. Instantiate the Prefab at the calculated location
-            // Quaternion.identity means "zero rotation" (just use the prefab's default rotation)
+            // Instantiate the Prefab at the calculated location
             GameObject newPlant = Instantiate(branchPrefab, spawnLocation, Quaternion.identity);
             int randomNumber = Random.Range(0, hydrationMats.Length);
+
+            // Set the initial hydration level
             Material hydration = hydrationMats[randomNumber];
             newPlant.GetComponent<MeshRenderer>().material = hydration;
 
-            // Optional: Group them under this Spawner to keep your hierarchy clean
+            // Group all branches into the parent GameObject
             newPlant.transform.parent = this.transform;
             newPlant.name = "ZigzagPlant_" + i;
         }
