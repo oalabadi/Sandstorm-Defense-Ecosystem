@@ -48,7 +48,7 @@ public class BranchSpawner : MonoBehaviour
 
             // Group all branches into the parent GameObject
             newPlant.transform.parent = this.transform;
-            newPlant.name = "ZigzagPlant_" + i;
+            newPlant.name = "ZigzagPlant_" + i; 
         }
     }
 }
