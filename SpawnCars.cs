@@ -15,7 +15,7 @@ public class SpawnCars : MonoBehaviour
     {
         // Collecting all the cars GameObjects
         car = cars.GetComponentsInChildren<Rigidbody>();
-    }
+    } 
     
     private void Update()
     {
