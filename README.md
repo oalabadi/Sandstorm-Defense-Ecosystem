@@ -9,6 +9,12 @@ Current Development Roadmap:
 
 [X] Procedural car generation
 
+[X] Sun intensity and Dehydration rate
+
+[X] Hover on branch to see its hydration level
+
+[X] Drone Stations
+
 [X] LIDAR raycast visualization 
 
 [ ] Program autonomous drone pathfinding for targeted irrigation
