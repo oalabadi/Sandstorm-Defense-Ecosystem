@@ -17,8 +17,7 @@ Current Development Roadmap:
 
 [X] LIDAR raycast visualization 
 
-[ ] Program autonomous drone pathfinding for targeted irrigation
+[X] Program autonomous drone pathfinding for targeted irrigation
 
-[ ] User settings for sun intensity and irrigation rate
+[X] User settings for sun intensity and irrigation rate
 
-[ ] Climate change adaptation
