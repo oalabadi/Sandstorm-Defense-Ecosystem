@@ -6,7 +6,7 @@ Rather than relying on static assets, this testbed utilizes code-driven procedur
 
  ## Simulation Demo
 
-*(Upload a 10-second GIF here showing the LIDAR scanner painting a point cloud, or the procedural plants generating.)*
+*<img width="800" height="365" alt="SDS Demo" src="https://github.com/user-attachments/assets/9f607d09-17e6-4caf-95d7-8b46886f4cf5" />*
 
 ## Play the Demo
 
