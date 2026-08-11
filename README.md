@@ -13,7 +13,7 @@ Rather than relying on static assets, this testbed utilizes code-driven procedur
 You can experience the compiled simulation directly via itch.io:
 **[Play the Sandstorm Defense Ecosystem on itch.io](https://thunderx7.itch.io/sandstorm-defense-system)**
 
-## ⚙️ Core Technical Features
+## Core Technical Features
 
 ### 1. Procedural Botany & Algorithmic Geometry
 Plants in this 3D simulation are generated at runtime using C# mathematical loops and procedural branching to ensure that no two plants are mathematically identical. 
