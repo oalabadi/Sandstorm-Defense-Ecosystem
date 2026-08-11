@@ -11,7 +11,7 @@ Rather than relying on static assets, this testbed utilizes code-driven procedur
 ## Play the Demo
 
 You can experience the compiled simulation directly via itch.io:
-**[Play the Sandstorm Defense Ecosystem on itch.io](https://thunderx7.itch.io/sandstorm-defense-system)** (The project is broken and will be fixed)
+**[Play the Sandstorm Defense Ecosystem on itch.io](https://thunderx7.itch.io/sandstorm-defense-system)** 
 
 ## Core Technical Features
 
