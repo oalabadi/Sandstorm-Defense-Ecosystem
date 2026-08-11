@@ -2,7 +2,7 @@
 
 A 3D UnityEngine project for simulating autonomous desert afforestation irrigated by drones to protect highways and infrastructure from sandstorms.
 
-Rather than relying on static assets, this testbed utilizes code-driven procedural generation and algorithmic geometry to dynamically construct flora based on environmental parameters. Combined with spatial instancing and simulated drone raycasting, this framework serves as a scalable prototype for evaluating automated irrigation logistics and large-scale desert afforestation strategies.
+Using spatial instancing and simulated drone raycasting, this framework serves as a scalable prototype for evaluating automated irrigation logistics and large-scale desert afforestation strategies.
 
  ## Simulation Demo
 
