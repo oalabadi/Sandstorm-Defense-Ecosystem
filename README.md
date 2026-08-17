@@ -13,7 +13,7 @@ Using spatial instancing and simulated drone raycasting, this framework serves a
 
 You can experience the compiled simulation directly via itch.io:
 **[Play the Sandstorm Defense Ecosystem on itch.io]
-(https://thunderx7.itch.io/sandstorm-defense-system)** 
+(https://oalabadi.itch.io/sandstorm-defense-system)** 
 
 ## Core Technical Features
 
