@@ -17,7 +17,7 @@ You can experience the compiled simulation directly via itch.io:
 ## Core Technical Features
 
 ### 1. Procedural Botany & Algorithmic Geometry
-Plants in this 3D simulation are generated at runtime using C# mathematical loops and procedural branching to ensure that no two plants are mathematically identical. 
+Plants in this 3D simulation are generated at runtime using C# and procedural generation. 
 
 ### 2. Environmental Simulation & Hydration
 The ecosystem tracks and implements varied hydration levels across the generated vegetation, simulating realistic environmental needs. The simulation also features procedural car generation to accurately model the highway infrastructure being protected.
